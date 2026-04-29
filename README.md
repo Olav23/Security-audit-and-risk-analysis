@@ -1,40 +1,40 @@
 # Security-audit-and-risk-analysis
 
 ## 📌 Overview
-This project is a hands-on cybersecurity audit carried out in a controlled lab environment. The goal was to simulate a real-world infrastructure assessment, identify vulnerabilities, and evaluate their potential impact.
+This project is a cybersecurity audit conducted in a controlled lab environment as part of a penetration testing practice scenario. The objective was to simulate a basic infrastructure assessment and identify potential security weaknesses.
 
 ## 🎯 Objectives
-- Discover exposed services and open ports
-- Identify known vulnerabilities in running services
-- Assess exploitation risk in a lab environment
-- Provide mitigation and hardening recommendations
+- Perform network reconnaissance and service enumeration
+- Identify potential vulnerabilities in exposed services
+- Evaluate authentication security
+- Provide remediation and hardening recommendations
 
 ## 🛠️ Tools Used
-- Nmap (network reconnaissance and port scanning)
-- Nessus (vulnerability scanning)
-- Hydra (brute-force testing)
-- John the Ripper (password cracking)
+- Nmap – network scanning and service detection
+- Nessus – vulnerability assessment
+- Hydra – brute-force authentication testing
+- John the Ripper – password cracking analysis
 
 ## 🔍 Methodology
-1. Performed network scanning using Nmap to identify active hosts and services
-2. Conducted vulnerability analysis with Nessus
-3. Tested authentication strength using Hydra
-4. Attempted password analysis with John the Ripper
-5. Correlated findings to assess overall system risk
+- Performed network enumeration using Nmap to identify open ports and services
+- Ran vulnerability scans with Nessus to detect known security issues
+- Tested authentication strength using Hydra against exposed services
+- Analyzed password hashes using John the Ripper
+- Correlated results to evaluate overall system exposure
 
 ## 🚨 Key Findings
-- Exposed services detected including SSH, FTP, Telnet, and HTTP
-- Weak authentication mechanisms susceptible to brute-force attacks
-- Service misconfigurations potentially exposing sensitive information
+- Multiple exposed services detected (SSH, FTP, Telnet, HTTP)
+- Weak authentication policies enabling brute-force attempts
+- Service misconfigurations increasing attack surface
 
 ## ⚠️ Risk Assessment
-The target system was assessed as **high risk** due to the presence of multiple critical vulnerabilities and insecure services.
+The system was classified as **high risk** in a lab scenario due to the number of exposed services and weak authentication controls.
 
 ## 🛡️ Recommendations
-- Disable insecure protocols such as Telnet and FTP
+- Disable legacy protocols such as Telnet and FTP
 - Enforce strong password policies and account lockout mechanisms
-- Restrict access using firewall rules
-- Regularly apply security patches and updates
+- Restrict access via firewall rules and network segmentation
+- Apply regular security patches and updates
 
 ## 📄 Report
 Full technical report is available in the `/report` directory.
