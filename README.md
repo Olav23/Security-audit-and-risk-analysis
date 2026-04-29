@@ -1,32 +1,40 @@
 # Security-audit-and-risk-analysis
 
 ## 📌 Overview
-This project presents a cybersecurity audit performed on a target system, identifying vulnerabilities and assessing associated risks.
+This project is a hands-on cybersecurity audit carried out in a controlled lab environment. The goal was to simulate a real-world infrastructure assessment, identify vulnerabilities, and evaluate their potential impact.
 
 ## 🎯 Objectives
-- Identify exposed services and vulnerabilities
-- Assess risk levels
-- Provide remediation recommendations
+- Discover exposed services and open ports
+- Identify known vulnerabilities in running services
+- Assess exploitation risk in a lab environment
+- Provide mitigation and hardening recommendations
 
 ## 🛠️ Tools Used
-- Nmap
-- Nessus
-- Hydra
-- John the Ripper
+- Nmap (network reconnaissance and port scanning)
+- Nessus (vulnerability scanning)
+- Hydra (brute-force testing)
+- John the Ripper (password cracking)
 
-## 🔍 Key Findings
-- Multiple exposed services (SSH, FTP, Telnet, HTTP)
-- Weak authentication mechanisms vulnerable to brute force
-- Misconfigurations exposing sensitive data
+## 🔍 Methodology
+1. Performed network scanning using Nmap to identify active hosts and services
+2. Conducted vulnerability analysis with Nessus
+3. Tested authentication strength using Hydra
+4. Attempted password analysis with John the Ripper
+5. Correlated findings to assess overall system risk
 
-## 🚨 Risk Assessment
-The system presents a high-risk level due to multiple critical vulnerabilities.
+## 🚨 Key Findings
+- Exposed services detected including SSH, FTP, Telnet, and HTTP
+- Weak authentication mechanisms susceptible to brute-force attacks
+- Service misconfigurations potentially exposing sensitive information
+
+## ⚠️ Risk Assessment
+The target system was assessed as **high risk** due to the presence of multiple critical vulnerabilities and insecure services.
 
 ## 🛡️ Recommendations
-- Disable insecure services (Telnet, FTP)
-- Enforce strong passwords and account lockout policies
-- Implement firewall restrictions
-- Apply regular patching
+- Disable insecure protocols such as Telnet and FTP
+- Enforce strong password policies and account lockout mechanisms
+- Restrict access using firewall rules
+- Regularly apply security patches and updates
 
-## 📄 Full Report
-See `/report/` for the complete document.
+## 📄 Report
+Full technical report is available in the `/report` directory.
